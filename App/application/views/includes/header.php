@@ -67,7 +67,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">ABOUT</a></li>
-        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHAT??</a></li>
         <li><a href="#">CONTACT US</a></li>
       </ul>
     </div>
