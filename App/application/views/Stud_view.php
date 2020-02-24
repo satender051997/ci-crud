@@ -1,15 +1,10 @@
-<!DOCTYPE html> 
-<html lang = "en">
- 
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Students Data</title> 
-   </head>
-	
-   <body> 
-    
-   <a href = "<?php echo site_url('/stud/add_view');?>">Add</a>
-      <table border = "1"> 
+<div class="container bg-3">    
+  <h3 class="margin">Students
+  <a href="<?php echo site_url('/stud/add_view');?>" class="btn btn-primary pull-right">Add</a>
+  </h3>
+  <div class="row">
+    <div class="col-sm-12"> 
+    <table class="table table-hover"> 
          <?php 
             $i = 1; 
             echo "<tr>"; 
@@ -31,7 +26,8 @@
             } 
          ?>
       </table> 
-		
-   </body>
-	
-</html>
+    </div>
+  </div>
+</div>
+      
+            

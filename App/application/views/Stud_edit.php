@@ -1,13 +1,9 @@
-<!DOCTYPE html> 
-<html lang = "en">
- 
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Students Example</title> 
-   </head> 
-	
-   <body> 
-      <form method = "" action = "">
+<div class="container bg-3">    
+  <h3 class="margin">Students
+  <a href="<?php echo site_url('/stud/');?>" class="btn btn-primary pull-right">Back</a>
+  </h3>
+  <div class="row">
+    <div class="col-sm-12">  
       <?php 
             echo form_open('Stud_controller/update_student'); 
             echo form_hidden('old_roll_no',$old_roll_no); 
@@ -20,8 +16,6 @@
             echo form_submit(array('id'=>'submit','value'=>'Edit')); 
             echo form_close();
          ?> 
-			
-      </form> 
-   </body>
-	
-</html> 
+</div>
+  </div>
+</div>
