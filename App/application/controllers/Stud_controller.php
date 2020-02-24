@@ -27,18 +27,22 @@
   
       public function add_student() { 
          $this->load->model('Stud_Model');
-			
+         $this->load->helper(array('form'));
+         $this->load->library('form_validation');
+         $this->form_validation->set_rules('roll_no', 'Roll no', 'required|is_unique[stud.roll_no]');
+         $this->form_validation->set_rules('name', 'Name', 'required');
          $data = array( 
             'roll_no' => $this->input->post('roll_no'), 
             'name' => $this->input->post('name') 
          ); 
-			
-         $this->Stud_Model->insert($data); 
-   
-         $query = $this->db->get("stud"); 
-         $data['records'] = $query->result(); 
+         if ($this->form_validation->run() == TRUE)
+         {
+            $this->Stud_Model->insert($data); 
+            redirect('stud');
+         }
+         $data['title'] = "Add Students";
          $this->load->view('includes/header',$data); 
-         $this->load->view('Stud_view',$data); 
+         $this->load->view('Stud_add'); 
          $this->load->view('includes/footer',$data); 
       } 
   
