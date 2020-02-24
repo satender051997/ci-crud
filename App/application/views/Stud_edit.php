@@ -4,6 +4,7 @@
   </h3>
   <div class="row">
     <div class="col-sm-12">  
+    <?php echo validation_errors(); ?>
       <?php 
             echo form_open('Stud_controller/update_student'); 
          
