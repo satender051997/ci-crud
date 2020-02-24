@@ -66,9 +66,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
+        <li><a href="#">ABOUT</a></li>
         <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#">CONTACT US</a></li>
       </ul>
     </div>
   </div>
