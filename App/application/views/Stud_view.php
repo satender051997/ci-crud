@@ -11,6 +11,7 @@
             echo "<td>SrNo.</td>"; 
             echo "<td>Roll No.</td>"; 
             echo "<td>Name</td>"; 
+            echo "<td>Record Created Time</td>";
             echo "<td>Edit</td>"; 
             echo "<td>Delete</td>"; 
             echo "<tr>"; 
@@ -20,6 +21,7 @@
                echo "<td>".$i++."</td>"; 
                echo "<td>".$r->roll_no."</td>"; 
                echo "<td>".$r->name."</td>"; 
+               echo "<td>".$r->created_time."</td>"; 
                echo "<td><a href = '".site_url('stud/edit/'.$r->roll_no)."'>Edit</a></td>"; 
                echo "<td><a href = '".site_url('stud/delete/'.$r->roll_no)."'>Delete</a></td>"; 
                echo "<tr>"; 

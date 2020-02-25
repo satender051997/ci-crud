@@ -15,7 +15,8 @@
             <label for="name">Name:</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
             </div>
-            <button type="submit" class="btn btn-default btn-warning" id="submit">Add</button>
+            <button type="submit" class="btn btn-default btn-warning" id="submit" onclick="ncheck()">Add</button>
+            
          <?php   
          echo form_close(); 
          ?> 
