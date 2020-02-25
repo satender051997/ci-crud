@@ -9,7 +9,7 @@
             echo form_open('Stud_controller/add_student');?>
             <div class="form-group">
             <label for="roll_no">Roll No.</label>
-            <input type="text" class="form-control" id="roll_no" placeholder="Enter Roll No." name="roll_no">
+            <input type="number" class="form-control" id="roll_no" placeholder="Enter Roll No." name="roll_no">
             </div>
             <div class="form-group">
             <label for="name">Name:</label>

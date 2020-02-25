@@ -4,8 +4,8 @@
   </h3>
   <div class="row">
     <div class="col-sm-12">  
-    <?php echo validation_errors(); ?>
-      <?php 
+    <?php echo validation_errors(); 
+      
             echo form_open('Stud_controller/update_student'); 
          
             echo form_hidden('old_roll_no',$old_roll_no); 
